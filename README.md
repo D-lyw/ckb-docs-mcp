@@ -7,6 +7,21 @@
 - 提供 MCP 工具接口，支持搜索 CKB 相关文档和代码
 - 与 NervePuppy 向量数据库 API 集成
 
+### 集成示例
+
+```json
+{
+  "mcpServers": {
+    "ckb-docs-mcp": {
+      "command": "npx",
+      "args": [
+        "-y", "ckb-docs-mcp@latest"
+      ]
+    }
+  }
+}
+```
+
 ## 开发环境设置
 
 ### 先决条件

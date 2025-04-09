@@ -14,9 +14,10 @@
   "mcpServers": {
     "ckb-docs-mcp": {
       "command": "npx",
-      "args": [
-        "-y", "ckb-docs-mcp@latest"
-      ]
+      "args": ["-y", "ckb-docs-mcp@latest"],
+      "env": {
+        "OPENAI_API_KEY": "set your openai api key here"
+      }
     }
   }
 }
@@ -67,19 +68,4 @@ pnpm start
 - `query` (string, 必需): 搜索查询文本
 - `limit` (number, 可选): 要返回的结果数，默认为 8
 
-**示例请求:**
 
-```json
-{
-  "jsonrpc": "2.0",
-  "id": "1",
-  "method": "tools.call",
-  "params": {
-    "name": "ckb_docs_search",
-    "arguments": {
-      "query": "Nervos 网络是什么",
-      "limit": 3
-    }
-  }
-}
-```

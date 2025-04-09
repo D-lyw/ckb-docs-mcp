@@ -8,7 +8,7 @@ export async function createMcpServer() {
   // 创建 MCP 服务器
   const server = new McpServer({
     name: 'ckb-docs-mcp-server',
-    version: "0.1.3",
+    version: "0.1.4",
   });
 
   // 定义工具

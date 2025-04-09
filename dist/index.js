@@ -2,6 +2,10 @@
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { createMcpServer } from './mcpServer.js';
 async function main() {
+    if (!process.env.OPENAI_API_KEY) {
+        console.error('OPENAI_API_KEY is not set');
+        process.exit(1);
+    }
     try {
         const { server } = await createMcpServer();
         const transport = new StdioServerTransport();

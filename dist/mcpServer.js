@@ -6,7 +6,7 @@ export async function createMcpServer() {
     // 创建 MCP 服务器
     const server = new McpServer({
         name: 'ckb-docs-mcp-server',
-        version: "0.1.1",
+        version: "0.1.3",
     });
     // 定义工具
     server.tool('ckb_docs_search', '搜索 CKB 生态相关所有文档和代码及示例', {

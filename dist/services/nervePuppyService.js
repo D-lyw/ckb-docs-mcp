@@ -4,7 +4,7 @@ import { embed } from "ai";
 const VECTOR_STORE_NAME = "pgVector";
 const VECTOR_INDEX_NAME = "ckb_docs_embeddings";
 const EMBEDDING_MODEL = "text-embedding-3-small";
-const MASTRA_BASE_URL = "https://agent.nervepuppy.xyz";
+const MASTRA_BASE_URL = "https://ckb-agent.mastra.cloud";
 export class NervePuppyService {
     client;
     vectorStore;

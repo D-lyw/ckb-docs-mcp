@@ -1,11 +1,10 @@
 # CKB 文档 MCP 服务器
 
-这是一个基于 Model Context Protocol (MCP) 的服务器，提供 CKB 生态相关文档和代码的搜索功能。该服务器通过 NervePuppy API 连接到向量数据库，使用语义搜索技术提供高质量的搜索结果。
+这是一个基于 Model Context Protocol (MCP) 的服务器，提供 CKB 生态相关文档和代码的搜索功能。该服务器通过连接到 CKB 的文档和代码向量数据库，使用语义搜索技术提供高质量的搜索结果。
 
 ## 功能
 
 - 提供 MCP 工具接口，支持搜索 CKB 相关文档和代码
-- 与 NervePuppy 向量数据库 API 集成
 
 ### 集成示例
 
@@ -67,5 +66,3 @@ pnpm start
 
 - `query` (string, 必需): 搜索查询文本
 - `limit` (number, 可选): 要返回的结果数，默认为 8
-
-
